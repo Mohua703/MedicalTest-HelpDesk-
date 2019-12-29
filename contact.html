@@ -1,0 +1,39 @@
+<?php
+session_start();
+include"config.php";
+?>
+
+<html>
+<head>
+     <meta charset="utf-8">
+     <title> Contact Form </title>	
+     <link rel="stylesheet" type="text/css" href="style.css">	 
+</head>
+
+<body>
+
+   <div class="contact-title">
+             <h1>Hellow!!</h1>
+			 <h2>we are here to help you!!</h2>
+			 
+   </div>
+   
+   <div class="contact-form">
+      <form id="contact-form" method="post" action="contact-hand.php">
+	  
+	
+
+	  <input name="FirstName" type="text" class="form-control" placeholder="YourName" required><br>
+	  <input name="email" type="email" class="form-control" placeholder="Email" required><br>
+	  <input name="Mobile" type="text" class="form-control" placeholder="Mobile" required><br>
+	  
+	 
+	      <textarea name="message" class="form-control" placeholder="Message" row="4"
+		  required></textarea><br> 
+		  
+		  <input type="submit" class="form-control submit" value="Send Message">
+		  
+	  </form>
+   </div>
+</body>   
+</html>

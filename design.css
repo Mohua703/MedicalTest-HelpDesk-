@@ -1,0 +1,254 @@
+body {
+		
+	 background-image: url('test.jpg');
+	 background-repeat: no-repeat;
+     background-size: 100% 100%;
+	 background-attachment: fixed;
+	 margin: 0px;
+	 padding: 0px;
+	
+}
+
+
+/*write a selector to select the first div element(child) within the body element(parent)*/
+
+body>div:nth-child(1)
+{
+	
+    overflow:auto;
+	position: sticky;
+	top: 0px;
+	z-index: 1;	
+	background-color: rgba(0,0,0,0.4);
+	
+
+}
+
+body>div:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.logo{
+    width: 220px;
+    height: 60px;
+    overflow: visible;
+    
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 2px;
+    float: left;
+}
+
+.logo a {
+	
+	display;inline-block;
+	color:white;
+	font-size:200%;
+	text-decoration:none;
+	padding: 10px, 0px, 10px, 0px;
+
+	}
+
+/*write a selector to select all the <a> elements within logo class when it is hovered*/ 
+.logo a:hover{
+    color: rgb(255, 71, 26);
+}
+
+#bk {
+	height: 50px;
+    width: 170px;
+    padding: 10px 2px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 110%;
+    float: right;
+    margin: 2px 5px;
+	
+	
+}
+
+#bk:hover {
+    color: rgb(255, 71, 26);
+    background-color: rgba(0,0,0,0.4);
+}
+#bkb {
+	height: 50px;
+    width: 170px;
+    padding: 10px 2px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 110%;
+    float: right;
+    margin: 2px 5px;
+	
+	
+}
+
+#bkb:hover {
+    color: rgb(255, 71, 26);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#bkbtn {
+    height: 50px;
+    width: 170px;
+    padding: 10px 2px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 110%;
+    float: right;
+    margin: 2px 5px;
+}
+
+#bkbtn:hover {
+    color: rgb(255, 71, 26);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#navbar {
+    margin: 0px;
+    padding: 10px 2px;
+    height: 60px;
+    float:left;
+}
+
+#navbar>ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    height: 60px;
+}
+
+#navbar>ul>li {
+	
+	float:left;
+	height:60px;
+	text-align:center;
+	display:inline-block;
+  
+}
+
+#navbar>ul>li>a {
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+	min-width:100px;
+	max-width:180px;
+	display:inline-block;
+    height:30px;
+    
+    padding: 10px 5px;
+}
+
+#navbar>ul>li>a.active {
+    color:rgb(255, 71, 26);
+    border-bottom: 1px solid rgb(255, 71, 26);
+}
+
+#navbar>ul>li>a:not(.active):hover {
+	
+	color:rgb(255, 71, 26);
+    border-bottom: 1px solid rgb(255, 71, 26);
+
+}
+
+#headersec {
+    width: 100%;
+
+    background-image: url('test.jpg');
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#headersec #intro{
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 50px;
+    color:#ffcc00;
+	letter-spacing:2px;
+	
+}
+
+#section1{
+    background-image: url('t.jpg');
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+
+}
+
+#desc1{
+   
+	display: inline-block;
+	width: 50%;
+	text-align:center;
+	
+}
+
+#desc1 p{
+    color: #3333ff;
+    letter-spacing: 2px;
+}
+
+#desc1 h4, #desc1 h1{
+    color: rgb(255, 71, 26);
+}
+
+
+#desc3{
+    padding: 50px;
+    letter-spacing:4px;
+}
+
+#desc3>h3{
+    color:rgb(255, 71, 26);
+    text-align:center;
+	
+}
+
+#desc3 p{
+    color:#3333ff;
+    text-align:center;
+}
+
+
+footer{
+    background-color: rgba(0,0,0,0.95);
+    width: 100%;
+    overflow:hidden;
+}
+
+
+
+/*write a selector to select the second div child of footer tag*/
+footer>div:nth-child(2){
+    padding: 4%;
+    width:50%;
+    display:inline-block;
+}
+
+#branch-1{
+   
+	
+	float:left;
+	width:100%;
+}
+
+#branch-2{
+   
+
+	float:right;
+	width:50%;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+/*write a selector to select all the <a> elements within footer tag when hovered*/
+footer a:hover{
+    color: white;
+}
